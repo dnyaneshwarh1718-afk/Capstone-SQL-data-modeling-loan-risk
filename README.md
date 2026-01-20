@@ -60,4 +60,76 @@ On Day 1, I started with the `loan` table and validated it using basic SQL explo
 ### 6️⃣ Time-based Filtering
 - Find loans after a specific date
 
+---
 
+## ✅ Day 2 Goals (SQL-Based Business KPIs + Risk Segmentation)
+
+* Building **business-level KPIs** from the loan dataset
+* Performing **risk-based segmentation** using bands (Amount & Duration)
+* Creating **binary target flags** for default prediction (`is_default`, `is_paid`)
+* Preparing structured outputs for **master table modeling + stakeholder insights**
+
+---
+
+### ✅ Tasks Covered Today
+
+On Day 2, I focused on building **portfolio KPIs** and **default-risk insights** using SQL:
+
+---
+
+### 1️⃣ Portfolio KPIs by Status
+
+* Total loan amount by status
+* Avg loan amount by status
+* Avg duration by status
+
+---
+
+### 2️⃣ Default Risk Metrics (Overall + Segmented)
+
+* Default rate % overall
+* Default rate % by duration bucket (using `CASE`)
+
+---
+
+### 3️⃣ Account-Level Exposure KPIs
+
+* Count accounts by status
+* Identify accounts with more than 1 loan *(risk/repeat borrower check)*
+
+---
+
+### 4️⃣ District / Region-Level Exposure (if district join exists)
+
+* Top 10 districts by total loan amount
+
+---
+
+### 5️⃣ Feature Engineering with SQL (Bands + Flags)
+
+* Create loan amount bands using `CASE`
+* Create duration bands using `CASE`
+* Create binary flag: `is_default` (1 if status in `B`,`D` else 0)
+* Create binary flag: `is_paid` (1 if status in `A`,`C` else 0)
+
+---
+
+### 6️⃣ Default Rate by Risk Buckets (Business Segmentation)
+
+* Calculate default rate by amount band
+* Calculate default rate by duration band
+
+---
+
+KPI Queries : 
+
+✅ Total loan amount by status → Portfolio exposure KPI
+✅ Avg loan amount by status → Risk/size KPI
+✅ Avg duration by status → Tenure risk KPI
+✅ Default rate % overall → Core credit risk KPI
+✅ Default rate by duration bucket → Risk segmentation KPI
+✅ Accounts count by status → Customer/account exposure KPI
+✅ Default rate by amount band → Risk by loan size KPI
+✅ Default rate by duration band → Risk by tenure KPI
+
+---

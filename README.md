@@ -119,17 +119,19 @@ On Day 2, I focused on building **portfolio KPIs** and **default-risk insights**
 * Calculate default rate by amount band
 * Calculate default rate by duration band
 
+
 ---
 
 KPI Queries : 
 
-✅ Total loan amount by status → Portfolio exposure KPI
-✅ Avg loan amount by status → Risk/size KPI
-✅ Avg duration by status → Tenure risk KPI
-✅ Default rate % overall → Core credit risk KPI
-✅ Default rate by duration bucket → Risk segmentation KPI
-✅ Accounts count by status → Customer/account exposure KPI
-✅ Default rate by amount band → Risk by loan size KPI
-✅ Default rate by duration band → Risk by tenure KPI
+  * Total loan amount by status → Portfolio exposure KPI
+  * Avg loan amount by status → Risk/size KPI
+  * Avg duration by status → Tenure risk KPI
+  * Default rate % overall → Core credit risk KPI
+  * Default rate by duration bucket → Risk segmentation KPI
+  * Accounts count by status → Customer/account exposure KPI
+  * Default rate by amount band → Risk by loan size KPI
+  * Default rate by duration band → Risk by tenure KPI
+    
 
 ---
